@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>SIMPLE LiBRARY</h1>
+    <div class="container">
+      <dialog>
+        <div><img src="close.svg" alt="" class="close" /></div>
+        <div>
+          <form action="" method="get">
+            <h1>ADD YOUR BOOK</h1>
+            <br />
+            <input
+              type="text"
+              name=""
+              id=""
+              class="author"
+              placeholder="Author" />
+
+            <input
+              type="text"
+              name=""
+              id=""
+              class="title"
+              placeholder="Title" />
+
+            <input
+              type="text"
+              name=""
+              id=""
+              class="pages"
+              placeholder="Pages" />
+            <div>
+              Have you read the book?
+              <label
+                ><input type="radio" name="radio" value="yes" class="radio1" />
+                Yes</label
+              >
+              <label
+                ><input type="radio" name="radio" value="no" class="radio2" />
+                No</label
+              >
+            </div>
+
+            <input name="submit" type="submit" value="Add" class="submit" />
+          </form>
+        </div>
+      </dialog>
+      <div class="addbutton">
+        <img src="book-plus.svg" alt="" class="bookPlus" />
+      </div>
+      <div class="content"></div>
+    </div>
+
+    <footer class="footer">
+      <script>
+        const currentYear = new Date().getFullYear();
+        document.querySelector(
+          "footer"
+        ).innerText = `Copyright © ${currentYear} lawrd`;
+      </script>
+    </footer>
+    <script src="newscript.js"></script>
+  </body>
+</html>

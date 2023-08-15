@@ -24,10 +24,20 @@ function Book(author, title, pages, read) {
   this.read = read;
 }
 
-myLibrary.forEach(function (item, index, arr) {
-  const divElement = document.createElement("div");
-  document.querySelector(".content").appendChild(divElement);
-  divElement.textContent = '${.author} by ${book.author}, ${book.pages} pages, Read: ${book.read}`;  
+myLibrary.forEach(function (book, index) {
+  const bookDiv = document.createElement("div");
+  bookDiv.classList.add("book");
+
+  const closeButton = document.createElement("button");
+  closeButton.textContent = "delete";
+  closeButton.classList.add("close-button");
+
+  bookDiv.textContent = `${book.title} by ${book.author}, ${book.pages} pages, Read: ${book.read}`;
+  bookDiv.appendChild(closeButton);
+
+  // closeButton.addEventListener("click", function (myLibrary.remo) {
+
+  // });
 });
 
 submit.addEventListener("click", function (e) {
